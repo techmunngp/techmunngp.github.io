@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from hackinout.co/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Jan 2019 10:40:09 GMT -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>IEEE TechMUN | 9-10 Feb 2019</title>
+  <!-- Meta tags -->
+  <meta property="fb:app_id" content="349176421957919">
+  <meta property="og:title" content="IEEE TechMUN | 9-10 Feb 2019">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="img/fb-ogimage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@IEEE_NAGPUR_MUN">
+  <meta name="twitter:site" content="@IEEE_NAGPUR_MUN">
+  <meta name="twitter:title" content="IEEE TechMUN | 9-10 Feb 2019">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:domain" content="index.html">
+  <meta name="twitter:image:src" content="img/twitter-og.png">
+  <meta name="description" content="IEEE TechMUN | 9-10 Feb 2019">
+  <meta name="keywords" content="">
+  <meta name="author" content="InOut Team">
+  <meta http-equiv="cache-control" content="public">
+  <meta http-equiv="expires" content="Monday, 11 February 2018, 00:00:00 GMT">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="img/transparent.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="img/transparent.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/transparent.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/transparent.png" sizes="16x16">
+  <script src='https://static.codepen.io/assets/editor/live/console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js'></script>
+  <script src='https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js'></script>
+  <link rel="canonical" href="https://codepen.io/SitePoint/pen/MwNPVq" />
+
+  <meta name="application-name" content="InOut">
+  <meta name="msapplication-TileColor" content="#6bc8b0">
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+  <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png">
+  <meta name="theme-color" content="#6bc8b0">
+  <link rel="manifest" href="manifest.json">
+  <!-- Bootstrap core CSS -->
+
+
+<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/main.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <style class="cp-pen-styles">
+    body {
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+        font-weight: 300;
+    }
+
+    h1 {
+       
+        font-weight: 300;
+        font-size: 40px;
+        margin: 40px 0px 20px;
+    }
+
+    #clockdiv {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 500;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #clockdiv>div {
+        padding: 0px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+
+    #clockdiv div>span {
+        padding: 10px;
+        border-radius: 3px;
+     
+        display: inline-block;
+    }
+
+    .smalltext {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<style>
+  .parallax {
+    background-image: url("img/hero.png");
+
+    min-height: 750px;
+
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+</style>
+<style>
+  .box {
+    padding: 5px 15px;
+    background: #fff;
+    box-shadow: 0 1px 2px #c9c9c9;
+    -moz-box-shadow: 0 1px 2px #c9c9c9;
+    -webkit-box-shadow: 0 1px 2px #c9c9c9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .box:hover {
+    box-shadow: 0 2px 2px #bababa;
+    -moz-box-shadow: 0 2px 2px #bababa;
+    -webkit-box-shadow: 0 2px 2px #bababa;
+  }
+</style>
+
+<body style=" font-family:nunito">
+
+  <!-- Hero -->
+  <header id="header" style="padding-bottom:0px">
+
+    <div class="parallax">
+      <div id="clockdiv" style="margin-top:524px;position: relative;">
+        <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+        </div>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+
+  </div>
+  </header>
+  <!-- Navigation -->
+  <div class="container sticky-top navbar-container" style="padding-top:0px">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container">
+        <a class="brand-title js-scroll-trigger" href="#header">
+          <img src="img/transparent.png" alt="InOut logo" width="80px"> </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#secretariate">Secretariat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#eb">EB</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#commitees">Committees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsor</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="https://www.townscript.com/widget/ieee-nagpur-tech-mun-212131">Register</a>
+              </li>
+            <!-- TEAM PAGE WIP
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/team">Team</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- About -->
+  <section id="about" style="background-color:  #ceccce">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 text-black">
+          <h2 class="section-heading">About MUN</h2>
+          <h3>WHAT IS MUN (Model United Nations).</h3>
+          <p class="mt-3" style="text-align: left; font-family:nunito" >
+            Model UN is a simulation of the United Nations (and various other governmental bodies) where participants play the part of
+            representatives meeting in structured committees. While it is an academic activity that requires research and
+            knowledge in world history, economic theory, and political theory, skills like public speaking and negotiation
+            are key.</p>
+          <p  class="mt-3"  style="text-align: left; font-family:nunito" >Every committee in the GA (General Assembly) debates different issues that effect international relations. Every
+            delegate represents their country’s view on the issue. The goal of the UN is to come up with an effective resolution
+            to the issue that passes a majority vote . The best performing delegates are generally awarded at the end of
+            the conference.</p>
+          <p  class="mt-3"  style="text-align: left; font-family:nunito">Stand on a global platform#Represent a country#Show your spirit#IEEE Nagpur M.U.N</p>
+        </div>
+        <div class="col-lg-6 col-12 text-black flex-center">
+          <div class="art pt-5 pt-lg-0 d-flex flex-column align-items-lg-end align-items-center">
+            <div class="line line-1">
+              <img class="img-fluid" src="img/200.png" width="50%" alt="200+">
+              <div class="text text-black">Participants</div>
+            </div>
+            <div class="line line-1" >
+              <img align="right" class="img-fluid" src="img/20.png"width="50%"  alt="20">
+              <div class="text text-black">Institutes</div>
+            </div>
+            <div class="line line-2">
+              <img class="img-fluid" src="img/4.png"width="50%"  alt="4">
+              <div class=" text text-black">Agenda</div>
+            </div>
+            <div class="line line-3">
+              <img  align="right" class="img-fluid" src="img/5000.png"width="50%"  alt="5000">
+              <div class=" text text-black">Prize</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Welcome -->
+
+  <section id="secretariate" style="background-color:#efedef">
+
+    <div class="container" >
+      <div class="row box" style="background-color:#fff">
+        <div class="col-md-6 " style="top:13px; font-family:nunito">
+          <h4 style="text-align: center"> MESSAGE FROM SECRETARY GENERAL</h4>
+          <p style="text-align: left; font-size: 18px">Dear Delegates,
+            <br> It is with great honor and deep pleasure that I invite you to the third annual session of IEEE TechMUN, to be
+            held on 9th and 10th February, 2019 in G. H. Raisoni College of Engineering, Nagpur.
+            <br> The grand success of IEEE Nagpur TechMUN'18 would've been impossible without the enthusiastic participation
+            of Delegates from throughout the city. Thanks to all those who represented the respective countries last year.
+            We look forward to seeing you again this summer.
+            <br> This year we are hosting 4 committees. As in fundamental ways, the world has gone in reverse. Conflicts have
+            deepened and new dangers have emerged along with the emerging technology. To me the conference embodies my spirit
+            that we need to be more courageous than ever to meet the dangers and set the world on track towards a better
+            society.
+            <br> Once again, thank you for supporting our conference and hope your all are excited for the second edition as
+            every one in the Secretariat is!
+            <br>
+            <br> Regards,
+            <br>
+            <h5  style="text-align:left">Dimple Khilwani
+              <br> Secretary General
+              <br> IEEE TechMUN</h5>
+          </p>
+
+
+        </div>
+        <div class="col-md-6 " style="top:13px">
+          <img style="    border-radius: 10px;" src="img/dimple.jpg" alt="">
+        </div>
+      </div>
+      <div class="row box" style="background-color:#fff">
+        <style>
+        .rudra{
+max-width: 520px;
+margin-top:69px;
+
+
+        }
+        </style>
+        <div class="col-md-6  " style="top:13px">
+<img style="    border-radius: 10px;"  class="rudra" src="img/rudra.jpg" alt="">
+        </div>
+        <div class="col-md-6 " style="top:13px; font-family:nunito">
+            <h4 style="text-align: center">MESSAGE FROM DEPUTY SECRETARY GENERAL </h4>
+<p style="text-align: left; font-size: 18px">
+    Dear Delegates, <br>
+    It is an absolute honor for me to welcome each one of you to the third annual session of Model United Nations Conference (TECHMUN) in G. H. Raisoni College of Engineering Nagpur, India to be held on 9th and 10th February, 2019.
+    <br>
+    Keeping in consideration, all the previous TECHMUN editions, it is correct to say that TECHMUN is indeed felicitous for the organization of a successful national conference that offers substantially sound debate as well as deliberation, which inturn leads to effective decisions. TECHMUN endorses the preparation of all participants to attain knowledge and high level skills that can be put to good use in the future, including possession of instruments for a better understanding of global dynamics and their elucidation, and the ability to relate and further manage affiliations with the globalized world in which we live, in terms of cultures, political opinions, and value systems other than their own.
+    <br>
+    I look forward to some remarkable discussions in the committee sessions. I must admit that I am waiting to host you all with my entire team at the City of Oranges with all eagerness, for experiencing a symbiotic relationship like never before.
+    Till then just wonder, <br>
+    Who knows what the gods have in store for us?
+    <br>
+    Regards,<br>
+    <h5 style="text-align:left">
+    Rudratej Tiwari,<br>
+    Deputy Secretary General,<br>
+    IEEE Nagpur MUN</h5>
+</p>
+          </div>
+      </div>
+
+    </div>
+
+  </section>
+   <!-- Tracks -->
+ 
+  <section id="tracks" style="background-color:#ceccce">
+      <div id="eb" class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center text-black">
+
+            <img class="img-fluid" src="img/eb (2).png" alt="EB">
+            <p class="mt-1" ></p>
+            <p class="mt-3">The Awesome People in our EXECUTIVE BOARD.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row track-list mt-5" >
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="i">
+              <img src="img/44932958_1958812754204920_6075277694558273536_n.png" alt="Vikram" width="125%" >
+              <div class="title mt-1">Vikram Advani</div>
+              <h5>CO-CHAIR, UNEP</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="bockchain">
+              <img src="img/Vedant Ballal.png"  width="125%" alt="Vedant">
+              <div class="title mt-1">Vedant Ballal</div>
+              <h5>CO-CHAIR, UNEP</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="it">
+              <img src="img/WhatsApp Image 2019-01-17 at 11.52.54 PM.png"  width="125%" alt="prajakta">
+              <div class="title mt-1"> Prajakt Dhawale </div>
+              <h5>CHAIR, UNGA DISEC</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="alorithm">
+              <img src="img/Screenshot (36).png" alt="raunak"  width="125%">
+              <div class="title mt-1">Raunak Kurani</div>
+              <h5>CHAIR, UNSC</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="finech">
+              <img src="img/Prabhat Thaokar .png" alt="prabhat"  width="125%">
+              <div class="title mt-1">Prabhat Thaokar</div>
+              <h5>VICE CHAIR, UNSC</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="futuremobility">
+              <img src="img/Dhnyanada Dhote .png" alt="Dhnyanada"  width="125%">
+              <div class="title mt-1">Dhnyanada Dhote</div>
+              <h5>SPEAKER, LOK SABHA</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="healthtch">
+              <img src="img/Untitled-1.png" alt="Arnab"  width="105%">
+              <div class="title mt-1">Arnab Hait</div>
+              <h5>DEPUTY SPEAKER, LOK SABHA</h5>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-3 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="l">
+              <img src="img/track-mlpng" alt=""  width="125%">
+              <div class="title mt-1"></div>
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+           
+          </div>
+        </div>
+      </div>
+      <!-- Tracks Modal -->
+      <div class="modal fade" id="trackModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="d-flex">
+              <div class="modal-text">
+                <div class="modal-header">
+                  <span class="modal-title">Track title</span>
+                </div>
+                <div class="modal-body">Track body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" id="nextTrack">Next track</button>
+                </div>
+              </div>
+              <div class="track-img d-none d-lg-block"></div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" style="background-color: #efedef">
+      <div id="commitees" class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center text-white">
+            <img class="img-fluid" src="img/com.png" alt="committees">
+            <p class="mt-3"></p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row track-list mt-5">
+            <button class="btn col-lg-6 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="unep" style="">
+              <img src="img/unep.png" alt="UNEP" width="250px">
+              <div class="title mt-1">UNEP</div>
+              <h5>AGENDA</h5>
+              
+              <p style="text-align: center; font-size: 18px">
+                Creating a framework to prevent and <br> reduce air pollution to improve air quality.
+              </p>
+             
+              
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-6 col-md-6 track-item" type="button" data-toggle="modal" data-target="#trackModal" data-track="ungadisec" style="">
+              <img src="img/UNGA DISEC.png" alt="UNGA DISEC" width="250px">
+              <div class="title mt-1">UNGA DISEC</div>
+              <h5>AGENDA</h5>
+              <p style="text-align: center; font-size: 18px">
+                Development of Information Technology and <br> Telecommunications in context of International Security
+              </p>
+             
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-6 col-md-6   track-item " type="button" data-toggle="modal" data-target="#trackModal" data-track="unsc" style="">
+              <img src="img/UNSC.png" alt="UNSC" width="250px">
+              <div class="title mt-1">UNSC</div>
+              <h5>AGENDA</h5>
+              <p style="text-align: center; font-size: 18px">
+                Analysing the status of Disputed territories with <br> Special reference to Crimea and South China Sea
+              </p>
+             
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+            <button class="btn col-lg-6 col-md-6  track-item " type="button" data-toggle="modal" data-target="#trackModal" data-track="loksabha" >
+              <img src="img/LOK SABHA.png" alt="LOK SABHA" width="250px">
+              <div class="title mt-1">LOK SABHA</div>
+              <h5>AGENDA</h5>
+              <p style="text-align: center; font-size: 18px">
+                Discussing the extent of Section 124(A) <br> (Sedition law) of the Indian Penal Code.
+              </p>
+             
+              <div class="subtitle mt-1">Learn More</div>
+            </button>
+           
+           
+          </div>
+        </div>
+      </div>
+      <!-- Tracks Modal -->
+      <div class="modal fade" id="trackModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="d-flex">
+              <div class="modal-text">
+                <div class="modal-header">
+                  <span class="modal-title">Track title</span>
+                </div>
+                <div class="modal-body">Track body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" id="nextTrack">Next track</button>
+                </div>
+              </div>
+              <div class="track-img d-none d-lg-block"></div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Sponsors -->
+  <section id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <img class="img-fluid" src="img/SPON.png" alt="Sponsors">
+          <p class="mt-3">Interested in becoming a sponsor? Email us at
+            <a href="mailto:contact.techmun@gmail.com">   contact.techmun@gmail.com </a>
+          </p>
+        </div>
+      </div>
+      <div class="logos">
+      <!--    <div>
+          <a href=" "  rel="noreferrer">
+            <img src="img/logo-ethereum.svg" alt="ethereum logo" class="img-fluid" style="width: 480px">
+          </a>
+        </div>
+      <div class="d-flex flex-column flex-lg-row mt-4">
+          <a href=" "  rel="noreferrer">
+            <img src="img/logo-linode.svg" alt="linode logo" class="img-fluid" style="width: 280px"> </a>
+          <a href=" "  rel="noreferrer" class="my-4 my-lg-0">
+            <img src="img/logo-balsamiq.svg" alt="balsamiq logo" class="img-fluid" style="width: 280px"> </a>
+          <a href=""  rel="noreferrer" class="mt-lg-4">
+            <img src="img/logo-devfolio.svg" alt="devfolio logo" class="img-fluid" style="width: 280px">
+          </a>
+        </div>
+        <div class="mt-3 d-flex flex-column flex-lg-row">
+          <a href=""  rel="noreferrer" class="mt-lg-2">
+            <img src="img/logo-elastic.svg" alt="elastoic logo" class="img-fluid" style="width: 220px"> </a>
+          <a href=""  rel="noreferrer">
+            <img src="img/logo-gojek.svg" alt="go-jek logo" class="img-fluid" style="width: 220px"> </a>
+          <a href=""  rel="noreferrer">
+            <img src="img/logo-digitalocean.svg" alt="digitalocean logo" class="img-fluid digital-ocean">
+          </a>
+        </div>-->
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="" rel="noreferrer">
+            <img src="img/tcs.png" alt="tcs" class="img-fluid" style="width: 220px"> </a>
+          <a href=""  rel="noreferrer" class="img-fluid mt-5 mt-lg-0">
+            <img src="img/town.png" alt="townscript" style="width: 220px">
+          </a>
+        </div>
+       <!-- <div class="mt-4">
+          <a href="" rel="noreferrer" class="mx-md-auto">
+            <img src="img/logo-quiknode.svg" alt="quiknode logo" class="img-fluid" style="width: 220px">
+          </a>
+        </div>-->
+      </div>
+    </div>
+  </section>
+  <!-- FAQs -->
+  <section id="faq" style="background-color:#efedef">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <img class="img-fluid" src="img/title-faq.png" alt="FAQ.">
+          <p class="mt-3">   </p>
+        </div>
+      </div>
+      <div class="row mt-5" id="accordion">
+        <div class="col-lg-6 col-12">
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">Why participate in IEEE Tech MUN ? </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="faqOne" data-parent="#accordion">
+              <div class="card-body pt-2">IEEE Tech MUN prides itself on its highly inclusive nature and ability to attract students from all areas of study. It is unique because of the great depth of experiences and perspectives provided by delegates from a wide range of academic backgrounds. This MUN offers students a chance to interactively educate themselves about international problems while increasing their negotiation and public speaking skills. The dynamic peer motivated setting is an ideal place for students to apply their knowledge while creating lasting friendships and having loads of fun.</div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo"> How do I know that my registration was successful?</div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
+              <div class="card-body pt-2">You will be redirected to the Townscript page as soon as you click on the Register tab. After you complete you registration and payment process, a ticket will be generated through Townscript which means your registration and payment are successful. You will also receive a confirmation mail on your registered email address.
+              </div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+              aria-controls="collapseThree">How many delegates may represent a country? </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion">
+              <div class="card-body pt-2">One country will be represented by only one delegate. Double delegation is not allowed. </div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+              aria-controls="collapseFour">Are there any activities besides the formal council meetings?</div>
+            <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion">
+              <div class="card-body pt-2">Yes there are! Every day after the sessions we have after session drinks and lunch. Apart from that after session drinks, lots of social activities will be organized during Tech MUN for delegates and staff to create a special atmosphere.
+              </div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+              aria-controls="collapseFive">Is accommodation and food provided? </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="faqFive" data-parent="#accordion">
+              <div class="card-body pt-2">Yes accommodation and food (breakfast, lunch and dinner) will be provided for both days of Tech MUN. </div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true"
+              aria-controls="collapseEight">What are the committees and their agendas ?</div>
+            <div id="collapseEight" class="collapse" aria-labelledby="faqEight" data-parent="#accordion">
+              <div class="card-body pt-2">There are 4 Committees: <br>
+
+              <h6>  UNEP (United Nations Environment Programme)</h6> 
+                
+                Creating a framework to prevent and reduce air pollution to improve air quality. <br>
+                
+              <h6>  Disarmament and International Security Committee (UNGA DISEC)</h6> 
+                Development of Information Technology and Telecommunications in context of International Security. <br>
+                
+                <h6>United Nations Security Council (UNSC) </h6>
+                
+                Analyzing the status of Disputed territories with Special reference to Crimea and South China Sea. <br>
+                
+              <h6>  Lok Sabha</h6> 
+                
+                Discussing the extent of Section 124(A) (Sedition law) of the Indian Penal Code.
+                </div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+              aria-controls="collapseSix">Do I need MUN experience? </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="faqSix" data-parent="#accordion">
+              <div class="card-body pt-2">Absolutely not – most of the participants at Tech MUN have no experience with MUN before. Enthusiasm is the characteristic we look for the most.</div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
+              aria-controls="collapseSeven">How do I get to the venue ? </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="faqSeven" data-parent="#accordion">
+              <div class="card-body pt-2">Transportation facilities will be provided from the accommodation to the venue and for the delegates who live far from the venue in Nagpur. (Opt for transportation during registration).</div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true"
+              aria-controls="collapseNine">Is the certificate valuable ?</div>
+            <div id="collapseNine" class="collapse" aria-labelledby="faqNine" data-parent="#accordion">
+              <div class="card-body pt-2">Yes the the certificate of IEEE Tech MUN carries a great value, since this is an International MUN organized by IEEE Nagpur Subsection. 
+              </div>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-header btn collapsed" id="faqTen" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true"
+              aria-controls="collapseTen"> Are there stipends or financial support for delegates ?</div>
+            <div id="collapseTen" class="collapse" aria-labelledby="faqTen" data-parent="#accordion">
+              <div class="card-body pt-2">Unfortunately there is no stipend or financial support for delegates. Our budget does not allow us to support delegates’ travel and/or accommodation expenses or to waive their standard fee.
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="mx-auto text-center">
+        <p class="mt-5">Did we miss something?</p>
+        <div class="contact-links">
+          <a href="  " target="">
+            <img src="img/icon-mail.svg" alt="Twitter"> Mail us Your Question </a>
+          <a href="mailto:contact.techmun@gmail.com" target="_blank">
+            <img src="img/icon-mail.svg" alt="Email"> contact.techmun@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cta" style="background-color:#ceccce">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <img class="img-fluid" src="img/title-see-you-soon.png" alt="See You Soon">
+          <div class="mt-5 mx-auto"></div>
+          <a class="btn btn-primary btn-lg py-3 px-5 apply-btn" href="https://www.townscript.com/widget/ieee-nagpur-tech-mun-212131" style="display: inline-block;background-color: #6ead3a">Register</a>
+          <div class="timer-text" id="timer">Applications are opened now !!!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section id="footer" style="background-color:#4c4947">
+    <!-- Social Links -->
+    <div id="social">
+      <div class="container">
+        <div class="social-links">
+          <div class="row">
+    
+            <a target="_blank" href="https://www.facebook.com/IEEENAGPURTECHMUN/" class="col-6 social-link facebook">
+              <span class="social-icon facebook"></span>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ieeenagpurtechmun/" class="col-6 social-link instagram">
+              <span class="social-icon instagram"></span>
+            </a>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-image"  >
+      <img src="img/footer-mobile.png" alt="Footer Image" class="img-fluid d-block d-md-none">
+      <div class="footer-animated-image">
+     
+      </div>
+      <div class="footer-container position-relative" style="background-color:#222022">
+        <div class="container">
+          <div class="footer-bar d-flex justify-content-between flex-column flex-md-row align-items-center">
+            <div>
+             &copy;IEEE Nagpur MUN
+            </div>
+            <div>
+              <a href="#header" class="js-scroll-trigger">
+                <img src="img/transparent.png" alt="techm" width="50px">
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/harsh2205" target="_blank">&lt;/&gt; by Harsh</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap core JavaScript -->
+
+
+
+
+
+
+  <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/main.min.js"></script>
+  <script src="js/track-modal.min.js" defer="defer"></script>
+  <!-- Devfolio Apply Now script -->
+  <!-- <script src="https://apply.devfolio.co"></script> -->
+  <script>// Preload minus icon for accordion
+    if (document.images) {
+      (new Image()).src = "img/icon-minus.svg";
+    }
+
+    // Add class to parent on accordion switch
+    $(document).ready(function () {
+      // var disableApplyButtons = function () {
+      //   $('#applynow-button-cta, #applynow-button-hero').html("Applications are closed.").addClass('disabled').attr('disabled', true);
+      // }
+
+      $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent('.card').addClass('active transition');
+      });
+
+      $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent('.card').removeClass('active');
+        $(this).parent('.card').addClass('transition');
+      });
+
+      $('.collapse').on('shown.bs.collapse hidden.bs.collapse', function () {
+        $(this).parent('.card').removeClass('transition');
+      });
+
+      // $('#applynow-button-cta, #applynow-button-hero').removeClass('disabled');
+
+      // // Create a local date object for application close date (29th Sept, 2018, 03:00:00)
+      // var applicationCloseTime = new Date('2018-09-29T03:00:00');
+
+      // // Once the difference with current time is negative, disable the buttons
+      // // And change the timer text
+      // if (applicationCloseTime.getTime() - Date.now() < 0) {
+      //   $('#timer').html("See you in the next edition!")
+      //   disableApplyButtons();
+      // }
+    });
+
+    // function openModal() {
+    //   try {
+    //     var devfolio = new Devfolio('inout');
+    //     devfolio.open();
+    //   } catch (error) {
+    //     console.log(error);
+    //     alert(
+    //       'Devfolio requires an external script to be loaded. Please disable any script blockers on this page and refresh to continue.'
+    //     )
+    //   }
+    // }
+
+    // document.querySelector('#applynow-button-hero').addEventListener('click', openModal);
+    // document.querySelector('#applynow-button-cta').addEventListener('click', openModal);
+
+    // Register the service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function (err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112787491-1"></script>
+  <script>window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112787491-1');
+
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 565518,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');</script>
+      <script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+      <script>function getTimeRemaining(endtime) {
+              var t = Date.parse(endtime) - Date.parse(new Date());
+              var seconds = Math.floor(t / 1000 % 60);
+              var minutes = Math.floor(t / 1000 / 60 % 60);
+              var hours = Math.floor(t / (1000 * 60 * 60) % 24);
+              var days = Math.floor(t / (1000 * 60 * 60 * 24));
+              return {
+                  'total': t,
+                  'days': days,
+                  'hours': hours,
+                  'minutes': minutes,
+                  'seconds': seconds
+              };
+  
+          }
+  
+          function initializeClock(id, endtime) {
+              var clock = document.getElementById(id);
+              var daysSpan = clock.querySelector('.days');
+              var hoursSpan = clock.querySelector('.hours');
+              var minutesSpan = clock.querySelector('.minutes');
+              var secondsSpan = clock.querySelector('.seconds');
+  
+              function updateClock() {
+                  var t = getTimeRemaining(endtime);
+  
+                  daysSpan.innerHTML = t.days;
+                  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+  
+                  if (t.total <= 0) {
+                      clearInterval(timeinterval);
+                  }
+              }
+  
+              updateClock();
+              var timeinterval = setInterval(updateClock, 1000);
+          }
+  
+          var deadline ='02/09/2019';
+          initializeClock('clockdiv', deadline);
+      //# sourceURL=pen.js
+      </script>
+</body>
+<!-- Mirrored from hackinout.co/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Jan 2019 10:40:28 GMT -->
+
+</html>
